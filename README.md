@@ -19,7 +19,7 @@ Install
 
 Run the script:
 
-    zsh < <(curl -s https://raw.github.com/brighbit/laptop/master/mac)
+    zsh < <(curl -s https://raw.github.com/brightbit/laptop/master/mac)
 
 What it sets up
 ---------------
