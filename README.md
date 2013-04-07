@@ -23,20 +23,21 @@ Run the script:
 
 What it sets up
 ---------------
-
-* Ack for finding things in files
 * Bundler gem for managing Ruby libraries
-* Heroku gem for interacting with the Heroku API
-* Homebrew for managing operating system libraries
+* Exuberant Ctags for indexing files for vim tab completion
+* Heroku Config plugin for local ENV variables
+* Heroku Toolbelt for interacting with Heroku apps
+* Hub gem for interacting with the GitHub API
+* Homebrew for managing operating system libraries (OS X only)
 * ImageMagick for cropping and resizing images
-* Memcache for testing caching
 * Postgres for storing relational data
 * Postgres gem for talking to Postgres from Ruby
-* Qt for headless JavaScript testing via Capybara Webkit
 * Rails gem for writing web applications
 * Ruby stable for writing general-purpose code
 * SSH public key for authenticating with Github and Heroku
+* The Silver Searcher for finding things in files
 * Tmux for saving project state and switching between projects
+* Watch for periodically executing a program and displaying the output
 
 It should take less than 15 minutes to install (depends on your machine).
 
