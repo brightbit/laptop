@@ -35,6 +35,9 @@ echo "Installing Postgres, a good open source relational database ..."
 echo "Installing Memcached, a good open source memory store (for caching)"
   successfully brew install memcached
 
+echo "Installing Redis, a good key-value database ..."
+  successfully brew install redis
+
 echo "Installing The Silver Searcher (better than ack or grep) for searching the contents of files ..."
   successfully brew install the_silver_searcher
 
