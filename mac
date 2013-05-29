@@ -19,6 +19,9 @@ echo "Installing Homebrew, a good OS X package manager ..."
   successfully ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
   successfully brew update
 
+echo "Installing zsh, a good shell ..."
+  successfully brew install zsh
+
 echo "Creat Launch Agent directory for auto start of services"
 mkdir -p ~/Library/LaunchAgents
 
