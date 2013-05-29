@@ -59,26 +59,17 @@ echo "Installing watch, used to execute a program periodically and show the outp
 echo "Installing hombrew/versions for installing old versions of packages"
   successfully brew tap homebrew/versions
 
-echo "Installing Ruby 1.9.3 ..."
-  successfully $(brew versions ruby | grep 1.9.3-p392 | cut -d\  -f2-)
-  successfully brew install ruby
-
 echo "Installing Ruby 2.0.0, which will be the default ..."
-  successfully brew unlink ruby
-  successfully $(brew versions ruby | grep 2.0.0-p0 | cut -d\  -f2-)
   successfully brew install ruby
 
 echo "Update to latest Rubygems version ..."
-  successfully /usr/local/Cellar/ruby/1.9.3-p392/bin/gem update --system
-  successfully /usr/local/Cellar/ruby/2.0.0-p0/bin/gem update --system
+  successfully gem update --system
 
 echo "Installing critical Ruby gems for Rails development ..."
-  successfully /usr/local/Cellar/ruby/1.9.3-p392/bin/gem install bundler foreman pg rails --no-ri --no-rdoc -f
-  successfully /usr/local/Cellar/ruby/2.0.0-p0/bin/gem install bundler foreman pg rails --no-ri --no-rdoc -f
+  successfully gem install bundler foreman pg rails --no-ri --no-rdoc -f
 
 echo "Installing GitHub CLI client ..."
-  successfully /usr/local/Cellar/ruby/1.9.3-p392/bin/gem install hub --no-ri --no-rdoc
-  successfully /usr/local/Cellar/ruby/2.0.0-p0/bin/gem install hub --no-ri --no-rdoc
+  successfully gem install hub --no-ri --no-rdoc
 
 echo "Installing Heroku CLI client ..."
   successfully brew install heroku-toolbelt
