@@ -19,6 +19,9 @@ echo "Installing Homebrew, a good OS X package manager ..."
   successfully ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
   successfully brew update
 
+echo "Creat Launch Agent directory for auto start of services"
+mkdir -p ~/Library/LaunchAgents
+
 echo "Putting Homebrew location earlier in PATH and adding ruby gem bin ..."
   successfully echo "
 # recommended by brew doctor
@@ -31,12 +34,15 @@ echo "Installing system libraries recommended for Ruby"
 echo "Installing Postgres, a good open source relational database ..."
   successfully brew install postgres --no-python
   successfully initdb /usr/local/var/postgres -E utf8
+  successfully ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
 echo "Installing Memcached, a good open source memory store (for caching)"
   successfully brew install memcached
+  successfully ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
 
 echo "Installing Redis, a good key-value database ..."
   successfully brew install redis
+  successfully ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 
 echo "Installing The Silver Searcher (better than ack or grep) for searching the contents of files ..."
   successfully brew install the_silver_searcher
