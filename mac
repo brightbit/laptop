@@ -22,6 +22,9 @@ echo "Installing Homebrew, a good OS X package manager ..."
 echo "Installing zsh, a good shell ..."
   successfully brew install zsh
 
+echo "Installing direnv, a good way to manage your path ..."
+  successfully brew install direnv
+
 echo "Creat Launch Agent directory for auto start of services"
 mkdir -p ~/Library/LaunchAgents
 
